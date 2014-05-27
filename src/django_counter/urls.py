@@ -1,4 +1,4 @@
-from django.conf.urls.defaults import *
+from django.conf.urls import patterns
 
 urlpatterns = patterns('django_counter.views',
      (r'^c/(?P<ctype_id>\d+)/(?P<object_id>\d+)/$', 'count', {}, 'django-counter-count'),
